@@ -1,0 +1,142 @@
+#container
+{
+	/*margin-top:50px;*/
+	/*margin-bottom: 50px;*/
+	/*border: 1px solid grey;*/
+	width: 100%; /*1500px*/ 
+	margin-left: auto;
+	margin-right: auto;
+
+	
+}
+body{
+	margin: 0;
+	background: #FFFFF0; 
+}
+#header
+{
+	text-align: center;
+	font-size: 250%;
+	color:red;
+	background-color: #F5F5C8;
+	
+}
+
+#menu div {
+ background: #DAA13B; 
+ color:white;
+ text-align:center;
+ font-size:150%;
+width: 100%;
+
+}
+
+/*@media (max-width: 700px){}*/
+#menu {
+	 display: flex;
+	 flex-direction: row;
+	 width: 100%;
+ 
+}
+
+#content {
+    display: grid;
+    min-width: 500px;
+    /*min-height: 800px;*/
+	height: 92.2vh;
+    text-align: justify;
+    background-color: rgb(255,255,240);
+    font-size: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.05fr;
+}
+
+
+#akapit1
+    {
+		margin-left: auto;
+		margin-right: auto;
+		margin: 40px 20px 40px 80px;
+        box-sizing: border-box;
+        /*width: 500px;*/
+        line-height: 20px;
+		/*height: auto;*/
+        border: 1px solid grey;
+        float:left;
+		
+    
+    }
+
+#akapit2
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin: 40px 80px 40px 20px;
+	box-sizing: border-box;
+	/*width: 700px;*/
+	line-height: 100px;
+	
+	border: 1px solid grey;
+	float: left;
+	font-family: Georgia, serif;
+	
+}
+
+#akapit3
+{ 
+	margin-left: 20px;
+	margin-right: 20px;
+    margin: 40px 20px 40px 80px;
+	box-sizing: border-box;
+	/*width: 500px;*/
+	line-height: 20px;
+	padding: 40px;
+	border: 1px solid grey;
+	float:left;
+	font-family: Georgia, serif;
+}
+
+#akapit4 {
+	margin-left: auto;
+	margin-right: auto;
+    margin: 40px 80px 40px 20px;
+	box-sizing: border-box;
+	/*width: 700px;*/
+	line-height: 15px;
+	padding: 40px;
+	border: 1px solid grey;
+	float: left;
+	font-family: Georgia, serif;
+	
+}
+
+
+#footer
+{
+	background:#DAA13B; color: rgb(44, 12, 189);
+text-align:center; font-size:150%;
+/*width: 100%;*/
+/*margin:0 auto 0 auto;*/
+grid-column: 1/3;
+grid-row: 3;
+
+}
+
+@media screen and (max-width: 1000px) {
+    #content {
+        /*font-size: 15px;*/
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(4,1fr),0,05fr;
+        
+    }
+	#footer{
+		grid-column: 1;
+grid-row: 5;
+	}
+    #akapit1,#akapit2,#akapit3,#akapit4{
+        margin:10px 10px;
+    }
+    #menu,#header,#footer{
+        min-width:625px;
+    }
+}
